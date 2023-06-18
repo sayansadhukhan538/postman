@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostMan</title>
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer-box">
+      <h2>PostMan Lite</h2>
+      <div class="inner-box">
+        <header class="signup-header">
+                <h1 style="font-weight:100">Welcome to PostMan</h1>
+                <p>It will help you to test your api within few seconds</p>
+            </header>
+        <main class="signup-body">
+          <label class="url" for="url">URL</label>
+          <input
+          class="url"
+          style="margin-left:90px; width: 61%"
+            type="text"
+            id="url"
+            placeholder="Enter URL here"
+            required
+          />
+          
+
+          <div class="request">
+            <legend style="float:left">Request Type</legend>
+            <div class="radio">
+              <input id="get" value="GET" type="radio" name="requestType" />
+            <label for="get">GET</label>
+            <input type="radio" id="post" value="POST" name="requestType" />
+            <label for="post">POST</label>
+            </div>
+            
+          </div>
+
+
+          <div class="content">
+            <legend style="float:left">Content Type</legend>
+            <div  class="radio">
+              <input type="radio" name="contentType" id="jsonRadio" value="json" />
+            <label for="json">JSON</label>
+            <input type="radio" id="paramsRadio" value="params" name="contentType" />
+            <label for="params">Custom Parameter</label>
+            </div>
+            
+          </div>
+
+          <div id="parametersBox">
+            <div class="div">
+                <label for="url">Parameter 1</label>
+          <input
+          
+            type="text"
+            id="parameterKey1"
+            placeholder="Enter parameter 1 Key"
+            
+          />
+          <input
+          
+            type="text"
+            id="parameterValue1"
+            placeholder="Enter parameter 1 Value"
+            
+          />
+          <input id="addParam"  type="button" value="+">
+            </div>
+            <div class="div" id="params"></div>
+          </div>
+
+
+          
+
+          <div class="div" id="requestJsonBox">
+            <label id="requestJsonText" for="requestJsonText">Enter Request json</label>
+          <textarea name="" id="requestJsonText" style="width:61%" rows="3"></textarea>
+          </div>
+          
+
+          
+          <!-- <button id="submit">submit</button> -->
+          <input id="submit" type="submit" value="Submit">
+          
+
+          <div class="div" id="responseJsonBox">
+            <label for="responseJsonText">Response</label>
+          <!-- <textarea name="" id="" cols="60" rows="3"></textarea> -->
+          <pre class="language-javascript" style="max-height:234px"
+          id="responsePre">
+            <code 
+            class="language-javascript"
+             id="responsePrism"> Your response will appear here</code></pre>
+          </div>
+          
+        </main>
+        <footer class="signup-footer"></footer>
+      </div>
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="prism.js"></script>
+  </body>
+</html>

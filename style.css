@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=text], select, textarea {
+    width: 36%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    /* resize: vertical; */
+  }
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #023e8a, #90e0ef);
+}
+h2{
+    font-family: 'Gill Sans MT', 'Trebuchet MS';
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 2.5rem;
+    color: #03045e;
+}
+input[type=submit],[type=button] {
+    background-color: #023e8a;
+    border: none;
+    border-radius: 6px;
+    color: #00d5ff;
+    padding: 13px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type=button]:hover{
+    background-color: #00b4d8;
+  }
+  input[type=submit]:hover{
+    background-color: #00b4d8;
+  }
+.inner-box{
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+    top: 42%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #8ee6f82b ;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 15px 15px 9px #023e8a;
+    z-index: 6;
+}
+.signup-header h1{
+    font-family:  Verdana;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #03045e;
+    
+
+}
+.url{
+    padding-bottom: 23px;
+}
+.request{
+    padding-bottom: 12px;
+}
+.radio{
+    padding-left: 136px;
+}
+/* #requestJsonText{
+    padding:0px 12px 12px 0px;
+} */
+/* #requestJsonText{
+    padding:1px 1px 1px 1px;
+} */
+.signup-header p{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-family:  Verdana;
+    color: #023e8a;
+}
+/* .signup-body{
+    margin: 20px 0;
+}
+.signup-body p{
+    margin: 10px 0;
+}
+.signup-body p label{
+    display: inline;
+}
+.signup-body p input{
+    width: 100%;
+    padding: 10px ;
+    border: 1px solid #00b4d8;
+    border-radius: 23px;
+    margin-top: 6px;
+} */
+#parameterKey1{
+    margin-left: 44px; 
+    width:25%;
+}
+#parameterValue1{
+    width:25%;
+}
+
+.signup-footer{
+    text-align: center;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top left, #023e8a, #90e0ef);
+    position: absolute;
+}
+.c1{
+    top: 50px;
+    left: 432px;
+}
+.c2{
+    bottom: 99px;
+    right: 369px;
+   
+}
